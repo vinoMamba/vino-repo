@@ -10,10 +10,12 @@
   "license": "MIT",
   "main": "./dist/popover.umd.js",
   "module": "./dist/popover.mjs",
+  "types":"./dist/index.d.ts",
   "exports": {
     ".": {
       "require": "./dist/popover.umd.js",
-      "module": "./dist/popover.mjs"
+      "module": "./dist/popover.mjs",
+      "types":"./dist/index.d.ts"
     }
   },
   "files": [

@@ -3,9 +3,10 @@
   "private": true,
   "scripts": {
     "check": "vue-tsc -p tsconfig.ui.json --noEmit --composite false",
+    "dts:clean":"rimraf ./dist",
     "dts:mv":"tsx ./scripts/dts.ts",
-    "dts": "vue-tsc -p tsconfig.ui.json --composite false --declaration --emitDeclarationOnly",
-    "build:ui": "pnpm check && pnpm --filter './packages/**' build"
+    "dts": "pnpm dts:clean && vue-tsc -p tsconfig.ui.json --composite false --declaration --emitDeclarationOnly",
+    "build:ui": "pnpm dts && pnpm check && pnpm --filter './packages/**' build && pnpm dts:mv"
   },
   "devDenpendencies": {},
   "devDependencies": {
