@@ -33,6 +33,12 @@ importers:
         specifier: '>=3.0.0'
         version: 3.3.4
 
+  packages/popover:
+    dependencies:
+      vue:
+        specifier: '>=3.0.0'
+        version: 3.3.4
+
 packages:
 
   /@ampproject/remapping@2.2.1:

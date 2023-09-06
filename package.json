@@ -3,7 +3,7 @@
   "private": true,
   "scripts":{
     "check": "vue-tsc -p tsconfig.ui.json --noEmit --composite false",
-    "build:ui": "pnpm check && pnpm --filter ./packages/** build"
+    "build:ui": "pnpm check && pnpm --filter './packages/**' build"
   },
   "devDenpendencies": {},
   "devDependencies": {

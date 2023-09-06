@@ -8,8 +8,8 @@ export default defineConfig({
   build: {
     lib: {
       entry: "./src/index.ts",
-      name: "button",
-      fileName: "button"
+      name: "popover",
+      fileName: "popover"
     },
     minify: false,
     rollupOptions: {
