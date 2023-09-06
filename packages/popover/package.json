@@ -1,0 +1,26 @@
+{
+  "name": "@vinojs/popover",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build":"vite build"
+  },
+  "keywords": [],
+  "author": "vino",
+  "license": "MIT",
+  "main": "./dist/popover.umd.js",
+  "module": "./dist/popover.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/popover.umd.js",
+      "module": "./dist/popover.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies":{
+    "vue":">=3.0.0"
+  }
+}
