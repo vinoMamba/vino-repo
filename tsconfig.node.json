@@ -1,0 +1,16 @@
+{
+  "extends":"./tsconfig.base.json",
+  "compilerOptions": {
+    "composite":true,
+    "lib":["ESNext"],
+    "type":["node"],
+    "allowJs":true
+  },
+  "include":[
+    "**/*.config.*"
+  ],
+  "exclude":[
+    "**/dist",
+    "**/node_modules"
+  ]
+}

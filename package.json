@@ -1,14 +1,20 @@
 {
   "name": "vino-repo",
   "private": true,
+  "scripts":{
+    "check": "vue-tsc -p tsconfig.ui.json --noEmit --composite false",
+    "build:ui": "pnpm check && pnpm --filter ./packages/** build"
+  },
   "devDenpendencies": {},
   "devDependencies": {
     "@vitejs/plugin-vue": "^4.3.4",
     "@vitejs/plugin-vue-jsx": "^3.0.2",
     "typescript": "^5.2.2",
-    "vite": "^4.4.9"
+    "vite": "^4.4.9",
+    "vue-tsc": "^1.8.10"
   },
   "dependencies": {
+    "@types/node": "^20.5.9",
     "vue": "^3.3.4"
   }
 }

@@ -1,0 +1,26 @@
+{
+  "name": "@vinojs/button",
+  "version": "0.0.1",
+  "description": "",
+  "scripts": {
+    "build":"vite build"
+  },
+  "keywords": [],
+  "author": "vino",
+  "license": "MIT",
+  "main": "./dist/button.umd.js",
+  "module": "./dist/button.mjs",
+  "exports": {
+    ".": {
+      "require": "./dist/button.umd.js",
+      "module": "./dist/button.mjs"
+    }
+  },
+  "files": [
+    "dist",
+    "README.md"
+  ],
+  "peerDependencies":{
+    "vue":">=3.0.0"
+  }
+}
