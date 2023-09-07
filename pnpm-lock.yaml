@@ -4,13 +4,13 @@ importers:
 
   .:
     dependencies:
-      '@types/node':
-        specifier: ^20.5.9
-        version: 20.5.9
       vue:
         specifier: ^3.3.4
         version: 3.3.4
     devDependencies:
+      '@types/node':
+        specifier: ^20.5.9
+        version: 20.5.9
       '@vitejs/plugin-vue':
         specifier: ^4.3.4
         version: 4.3.4(vite@4.4.9)(vue@3.3.4)
@@ -607,6 +607,7 @@ packages:
 
   /@types/node@20.5.9:
     resolution: {integrity: sha512-PcGNd//40kHAS3sTlzKB9C9XL4K0sTup8nbG5lC14kzEteTNuAFh9u5nA0o5TWnSG2r/JNPRXFVcHJIIeRlmqQ==}
+    dev: true
 
   /@vitejs/plugin-vue-jsx@3.0.2(vite@4.4.9)(vue@3.3.4):
     resolution: {integrity: sha512-obF26P2Z4Ogy3cPp07B4VaW6rpiu0ue4OT2Y15UxT5BZZ76haUY9guOsZV3uWh/I6xc+VeiW+ZVabRE82FyzWw==}
